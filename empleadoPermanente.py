@@ -12,7 +12,6 @@ class EmpleadoPermanente(Empleado):
         return comision
 
     def mostrar_datos(self):
-        texto = f"Nombre y apellido: {self.nombre} {self.apellido}\n"
-        texto += f"DNI: {self.dni} - Salario: {self.salario}\n"
+        texto = super().mostrar_datos()
         texto += f"Antigüedad: {self.antiguedad}\n"
         return texto
